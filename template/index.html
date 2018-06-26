@@ -24,12 +24,12 @@
 	<script src="{{url_for('static',filename='jquery.min.js')}}"></script> 
 	<script src="{{url_for('static',filename='skel.min.js')}}"></script>
 	<script src="{{url_for('static',filename='util.js')}}"></script>
-        <script src="assets/respond.min.js"></script>
-        <script src="assets/responsive.js"></script>
-        <link rel="stylesheet" href="assets/main.css" />
+  <script src="{{url_for('static',filename='respond.min.js')}}"></script>
+  <script src="{{url_for('static',filename='responsive.js')}}"></script>
+  <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}"/>
         <title>MY First cloudnative Intern Project</title>
         <meta charset="utf-8">
-            
+            {{url_for('static',filename='respond.min.js')}}
             
             <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
                        
@@ -58,9 +58,7 @@
                             
    <div class="image" style="background-image: url(&quot;images/mayeedwingdg.jpg&quot;); background-position: center center;">
     
-    <img src="images/mayeedwingdg.jpg" alt="" data-position="center center" 
-                                
-   style="display: none;">
+    <img src="{{url_for('static',filename='mayeedwingdg.jpg')}}" alt="" data-position="center center" style="display: none;">
                             
         </div>
                             
@@ -157,7 +155,7 @@
         <article id="about" class="panel secondary inactive" style="display: none;">
                             
         <div class="image" style="background-image: url(&quot;images/mayeedwingdg3.jpg&quot;); background-position: center center;">
-        <img src="images/mayeedwingdg3.jpg" alt="" data-position="center center" style="display: none;">
+        <img src="{{url_for('static',filename='mayeedwingdg3.jpg')}}" alt="" data-position="center center" style="display: none;">
          </div>
     
          <div class="content">
@@ -215,7 +213,7 @@
                 
             <div class="image" style="background-image: url(&quot;images/mayeedwingdg.jpg&quot;); background-position: center bottom;">
                 
-            <img src="images/mayeedwingdg.jpg" alt="" data-position="bottom center" style="display: none;">
+            <img src="            {{url_for('static',filename='mayeedwingdg.jpg')}}" alt="" data-position="bottom center" style="display: none;">
         
             </div><div class="content">
                 
