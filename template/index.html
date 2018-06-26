@@ -21,9 +21,9 @@
            <!-- theme-color -->
         <meta name="theme-color" content="#fff" />
         <!-- end-theme-color -->
-        <script src="assets/jquery.min.js"></script> 
-        <script src="assets/skel.min.js"></script>
-        <script src="assets/util.js"></script>
+	<script src="{{url_for('static',filename='jquery.min.js')}}"></script> 
+	<script src="{{url_for('static',filename='skel.min.js')}}"></script>
+	<script src="{{url_for('static',filename='util.js')}}"></script>
         <script src="assets/respond.min.js"></script>
         <script src="assets/responsive.js"></script>
         <link rel="stylesheet" href="assets/main.css" />
@@ -45,7 +45,7 @@
         
         <![endif]-->
        
-        <link rel="shortcut icon" href="icons/pwafire192white.png">
+	<link rel="shortcut icon" href="{{url_for('static',filename='pwafire192white.png')}}">
                 
 </head>
 
