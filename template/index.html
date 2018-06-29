@@ -16,7 +16,7 @@
                     </script> 
                 <!-- end of service worker -->
         <!-- start of web manifest -->
-        <link rel="manifest" href="            {{url_for('static',filename='manifest.json')}}">
+        <link rel="manifest" href="{{url_for('static',filename='manifest.json')}}">
          <!-- end of web manifest -->
            <!-- theme-color -->
         <meta name="theme-color" content="#fff" />
@@ -56,7 +56,7 @@
                         
 <article id="home" class="panel special" style="display: flex;">
                             
-   <div class="image" style="background-image: url(&quot;images/mayeedwingdg.jpg&quot;); background-position: center center;">
+   <div class="image" style="background-image: url(&quot;{{ url_for('static',filename='mayeedwingdg.jpg') }}&quot;); background-position: center center;">
     
     <img src="{{url_for('static',filename='mayeedwingdg.jpg')}}" alt="" data-position="center center" style="display: none;">
                             
@@ -110,8 +110,8 @@
     
     <article id="work" class="panel secondary inactive" style="display: none;">
            
-        <div class="image" style="background-image: url(&quot;images/pic04.jpg&quot;);background-position: center center;">
-        <img src="images/pic04.jpg" alt="" data-position="center center" style="display: none;">
+        <div class="image" style="background-image: url(&quot;{{ url_for('static',filename='pic04.jpg') }}&quot;);background-position: center center;">
+        <img src="{{ url_for('static',filename='pic04.jpg') }}" alt="" data-position="center center" style="display: none;">
         </div> 
         <div class="content">
         <ul class="actions spinX"><li>
@@ -154,7 +154,7 @@
                         
         <article id="about" class="panel secondary inactive" style="display: none;">
                             
-        <div class="image" style="background-image: url(&quot;images/mayeedwingdg3.jpg&quot;); background-position: center center;">
+        <div class="image" style="background-image: url(&quot;{{ url_for('static',filename='mayeedwingdg3.jpg') }}&quot;); background-position: center center;">
         <img src="{{url_for('static',filename='mayeedwingdg3.jpg')}}" alt="" data-position="center center" style="display: none;">
          </div>
     
@@ -211,9 +211,9 @@
      
       <article id="contact" class="panel secondary inactive" style="display: none;">
                 
-            <div class="image" style="background-image: url(&quot;images/mayeedwingdg.jpg&quot;); background-position: center bottom;">
+            <div class="image" style="background-image: url(&quot;{{ url_for('static',filename='mayeedwingdg.jpg') }}&quot;); background-position: center bottom;">
                 
-            <img src="            {{url_for('static',filename='mayeedwingdg.jpg')}}" alt="" data-position="bottom center" style="display: none;">
+            <img src="{{url_for('static',filename='mayeedwingdg.jpg')}}" alt="" data-position="bottom center" style="display: none;">
         
             </div><div class="content">
                 
@@ -237,7 +237,7 @@
                 
             </header>
 
-            <form name="contactform" method="post" action="assets/send-email.php">
+            <form name="contactform" method="post" action="{{ url_for('static',filename='send-email.php') }}">
             
             <div class="field half first">
                                
