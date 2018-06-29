@@ -16,17 +16,17 @@
                     </script> 
                 <!-- end of service worker -->
         <!-- start of web manifest -->
-        <link rel="manifest" href="{{url_for('static',filename='manifest.json')}}">
+        <link rel="manifest" href="{{ url_for('static',filename='manifest.json') }}">
          <!-- end of web manifest -->
            <!-- theme-color -->
         <meta name="theme-color" content="#fff" />
         <!-- end-theme-color -->
-	<script src="{{url_for('static',filename='jquery.min.js')}}"></script> 
-	<script src="{{url_for('static',filename='skel.min.js')}}"></script>
-	<script src="{{url_for('static',filename='util.js')}}"></script>
-  <script src="{{url_for('static',filename='respond.min.js')}}"></script>
-  <script src="{{url_for('static',filename='responsive.js')}}"></script>
-  <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}"/>
+	<script src="{{ url_for('static',filename='jquery.min.js') }}"></script> 
+	<script src="{{ url_for('static',filename='skel.min.js') }}"></script>
+	<script src="{{ url_for('static',filename='util.js') }}"></script>
+  <script src="{{ url_for('static',filename='respond.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='responsive.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static',filename='main.css') }}"/>
         <title>MY First cloudnative Intern Project</title>
         <meta charset="utf-8">
        
@@ -45,7 +45,7 @@
         
         <![endif]-->
        
-	<link rel="shortcut icon" href="{{url_for('static',filename='pwafire192white.png')}}">
+	<link rel="shortcut icon" href="{{ url_for('static',filename='pwafire192white.png') }}">
                 
 </head>
 
@@ -58,7 +58,7 @@
                             
    <div class="image" style="background-image: url(&quot;{{ url_for('static',filename='mayeedwingdg.jpg') }}&quot;); background-position: center center;">
     
-    <img src="{{url_for('static',filename='mayeedwingdg.jpg')}}" alt="" data-position="center center" style="display: none;">
+    <img src="{{ url_for('static',filename='mayeedwingdg.jpg') }}" alt="" data-position="center center" style="display: none;">
                             
         </div>
                             
