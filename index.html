@@ -6,14 +6,14 @@
       if ('serviceWorker' in navigator) 
         {
           window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/sw.js')
+          navigator.serviceWorker.register('sw.js')
           .then(function(){console.log("Service Worker Registered");});
           });
         }  
       </script> 
         <!-- end of service worker -->
         <!-- start of web manifest -->
-        <link rel="manifest" href="/manifest.json">
+        <link rel="manifest" href="manifest.json">
          <!-- end of web manifest -->
            <!-- theme-color -->
         <meta name="theme-color" content="#fff" />
@@ -63,7 +63,7 @@
       </div>
       </article>
         <article id="work" class="panel secondary inactive" style="display: none;">
-          <div class="image" style="background-image: url(&quot;images/pic04.jpg&quot;);background-position: center center;">
+          <div class="image" style="background-image: url(images/pic04.jpg);background-position: center center;">
             <img src="images/pic04.jpg" alt="" data-position="center center" style="display: none;">
           </div> 
           <div class="content">
@@ -90,7 +90,7 @@
         </div>
         </article>
         <article id="about" class="panel secondary inactive" style="display: none;">
-        <div class="image" style="background-image: url(&quot;images/mayeedwingdg3.jpg&quot;); background-position: center center;">
+        <div class="image" style="background-image: url(images/mayeedwingdg3.jpg); background-position: center center;">
         <img src="images/mayeedwingdg3.jpg" alt="" data-position="center center" style="display: none;">
         </div>
           <div class="content">
@@ -134,7 +134,7 @@
      
       <article id="contact" class="panel secondary inactive" style="display: none;">
                 
-            <div class="image" style="background-image: url(&quot;images/mayeedwingdg.jpg&quot;); background-position: center bottom;">
+            <div class="image" style="background-image: url(images/mayeedwingdg.jpg); background-position: center bottom;">
                 
             <img src="images/mayeedwingdg.jpg" alt="" data-position="bottom center" style="display: none;">
         
